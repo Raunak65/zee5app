@@ -11,4 +11,8 @@ public class Subscription {
 	private String autoRenewal;
 	private String expiryDate;
 	private String id;
+	
+	public Subscription() {
+		
+	}
 }

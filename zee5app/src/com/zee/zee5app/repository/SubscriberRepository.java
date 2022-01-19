@@ -27,12 +27,10 @@ public class SubscriberRepository {
 		}
 		subscribers = temp;
 		return "success";
-		
-		
 	}
-	
+
 //	update an user
-	public String updateUser(String id,Subscription subscriber) {
+	public String updateSubscriber(String id,Subscription subscriber) {
 		for (Subscription currSubscriber : subscribers) {
 			if (currSubscriber!=null) {
 				if (currSubscriber.getId().equals(id)) {
@@ -56,11 +54,8 @@ public class SubscriberRepository {
 	
 //	get user by Id
 	public Subscription getSubscriberById(String id) {
-		
-		
 		for (Subscription subscriber : subscribers) {
 			if(subscriber!=null) {
-				
 				if(subscriber.getId().equals(id)) {
 					return subscriber;
 				}

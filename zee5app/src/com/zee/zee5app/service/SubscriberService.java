@@ -23,16 +23,19 @@ public class SubscriberService {
 		if (service == null) service = new SubscriberService();
 		return service;
 	}
-	public String addSubscriber(Subscription register) {
-		return this.repository.addSubscriber(register);
+	public String addSubscriber(Subscription subscriber) {
+		return this.repository.addSubscriber(subscriber);
 	}
 	public Subscription getSubscriberById(String id) {
 		return this.repository.getSubscriberById(id);
 	}
-	public Subscription[] getUsers() {
+	public Subscription[] getSubscribers() {
 		return this.repository.getSubscribers();
 	}
 	public String deleteSubscriber(String id) {
 		return this.repository.deleteSubscriber(id);
+	}
+	public String updateSubscriber(String id,Subscription subscriber) {
+		return this.repository.updateSubscriber(id,subscriber);
 	}
 }

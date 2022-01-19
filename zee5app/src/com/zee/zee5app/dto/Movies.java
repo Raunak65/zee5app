@@ -12,4 +12,8 @@ public class Movies {
 	private float length;
 	private String id;
 	private String cast[];
+	
+	public Movies() {
+		
+	}
 }

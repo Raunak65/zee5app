@@ -12,5 +12,7 @@ public class Series {
 	private float length;
 	private String id;
 	private String cast[];
+	public Series() {
+	}
 	
 }
